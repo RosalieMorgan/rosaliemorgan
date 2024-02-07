@@ -1,0 +1,168 @@
+/*include padding and border in width and height*/
+* {
+  box-sizing: border-box;
+}
+
+/*grid layout*/
+header {
+  grid-area: ga-header;
+  /*keep the header visable when scrolling*/
+  position: -webkit-sticky; /*to make sticky work on Safari*/
+  position: sticky;
+  top: 0;
+  /*keeps the header above other elements*/
+  z-index: 1;
+}
+main {
+  grid-area: ga-main;
+}
+footer {
+  grid-area: ga-footer;
+}
+body {
+  display: grid;
+  grid: 'ga-header'
+  'ga-main'
+  'ga-footer';
+  /*keeps the elements from expanding beyond the width of the screen*/
+  grid-template-columns: minmax(0, 1fr);
+  /*keeps the footer at the bottom of the page by filing available space with the main content*/
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/*other formatting*/
+
+body {
+  background-color: #0b2d48;
+  margin: 0em;
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
+header {
+  background-color: white;
+  border-bottom-width: 0.125em;
+  border-bottom-style: solid;
+  border-bottom-color: dimgray;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: row wrap;
+}
+
+#navigationhomelogo {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#roselogo {
+  height: 2.25em;
+  width: 2.25em;
+}
+
+.navigationtab {
+  color: black;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-right-style: solid;
+  border-right-color: gray;
+}
+
+.navigationtab:hover {
+  background-color: lightgray;
+}
+
+.navigationtab:active {
+  background-color: slategray;
+}
+
+h1 {
+  color: white;
+  padding: 0.25em;
+}
+
+.maintext {
+  background-color: white;
+  padding: 0.5em;
+  margin: 0.75em;
+  border-radius: 0.25em;
+}
+
+dt {
+  font-weight: bold;
+  display: inline;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+dd {
+  display: inline; 
+  padding-left: 0;
+  margin-left: 0;
+}
+
+dt::after {
+  content: "-"; 
+  
+}
+
+dd::after {
+  content: "\A\A";
+  white-space: pre;
+}
+
+.airtablebox {
+  padding: 0.75em;
+}
+
+.airtable-embed {
+  width: 100%;
+  /*height: 533px;*/
+  height: 80vh;
+  border-radius: 0.25em;
+  border: none;
+}
+
+/*.googlesheetsbox {
+}*/
+
+.googlesheets-embed {
+  width: 100%;
+  height: 80vh;
+  border-radius: 0.25em;
+  border-style: solid;
+  border-color: gray;
+  border-width: 0.1em;
+}
+
+#contactemail {
+  color: blue;
+}
+
+footer {
+  background-color: white;
+  padding: 0.25em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer div {
+  color: #505050;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 0.5em;
+  border-right-style: solid;
+  border-right-color: gray;
+}
+
+footer div a {
+  color: inherit;
+}
+
+footer div a:hover {
+  color: blue;
+}

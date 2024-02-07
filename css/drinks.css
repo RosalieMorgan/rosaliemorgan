@@ -1,0 +1,39 @@
+#drinkcategoryselection {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: auto;
+}
+
+.drinkcategory {
+  flex: 1 1 0px;
+  max-width: 10em;
+  margin: 0.25em;
+  padding: 0.25em;
+  color: white;
+  border-radius: 0.25em;
+  box-shadow: 0.125em 0.125em 0em 0em gray;
+}
+
+#alcoholdrinks {
+  background-color: red;
+}
+
+#noandlowdrinks {
+  background-color: blue;
+}
+
+.drinkcategory a {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+#drinkimagenoandlow {
+  height: 10em;
+  width: 10em;
+}
+
+#drinkimagealcohol {
+  height: 10em;
+  width: 10em;
+}

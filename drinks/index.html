@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Google Analytics tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3T5QEX0L63"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3T5QEX0L63');
+</script>
+<!-- Google Adsense. No ads for now -->
+<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4794145425720084" crossorigin="anonymous"></script>-->
+<!-- W3 Schools Library -->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<!--CSS Style Sheets-->
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/drinks.css">
+<!--Specifies the character encoding-->
+<meta charset="UTF-8">
+<!--Helps with scaling across divices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Rosalie Morgan">
+<!--<meta name="description" content="">-->
+<!--<meta name="keywords" content="">-->
+<title>Drinks</title>
+</head>
+
+<body>
+
+<header w3-include-html="/header.html"></header>
+
+<main>
+
+<h1>Drinks</h1>
+
+<div class="maintext">
+  <h2>Databases</h2>
+  <p>
+    Drinks are divided across two airtable databases.
+  </p>
+  <div id="drinkcategoryselection">
+    <div class="drinkcategory" id="noandlowdrinks">
+      <a href="/drinks/noandlowalcohol.html">
+        <img id="drinkimagenoandlow" src="/images/drinks/noandlowalcohol.png" alt="Drawing of a cocktail glass"/>
+        <p>
+          Drinks with no and low alcohol
+        </p>
+      </a>
+    </div>
+    <div class="drinkcategory" id="alcoholdrinks">
+      <a href="/drinks/alcohol.html">
+        <img id="drinkimagealcohol" src="/images/drinks/alcohol.png" alt="Drawing of a cocktail glass with three x's"/>
+        <p>
+          I am over the legal drinking age
+          <br>
+          <br>
+          Drinks with alcohol
+        </p>
+      </a>
+    </div>
+  </div>
+  <p>A few notes about these databases:</p>
+  <ul>
+    <li>
+      I have fairly limited experience making cocktails. Please forgive any horrible miscategorizations.
+    </li>
+    <li>
+      I did my best to standardize ingredient names without losing too much subtlety.
+    </li>
+    <li>
+      I tried to include generic names where possible, and indicated brand names with an asterisk*.
+    </li>
+    <li>
+      No distinction is made between ingredients and garnish. Originally I made the distinction, but I thought it made filtering too cumbersome. While some garnishes are primarily visual, others are key components to the flavor and aroma of the drink (nutmeg for instance). I left out some hard to find or unusual garnishes for the sake of staying under my airtable row limit.
+    </li>
+    <li>
+      The preparation listed is an oversimplification, which does not indicate when ingredients must be left out of the shaker, muddled, or layered. No distinction is made between types of ice (crushed, cubed, etc). Some recipes include instructions for making less common components. Sometimes the listed ingredients must be used to create components days ahead of time.
+    </li>
+    <li>
+      You can exclude drinks that include ingredients that have a high ABV, such as bitters, or vanilla extract by applying the filter: "alcohol content" "has none of" "Contains Alcohol, but Contributes Little". At this time no distinction is made between ingredients which contain low amounts of alcohol (fruit juice, kombucha) and ingredients that contain no alcohol (water).
+    </li>
+    <li>
+      Alcohol Category is used for some low ABV ingredients to indicate that they contain vinegar, are fermented, or are alcohol substitutes. "Bitters Used in Small Amounts" is also a category here, even though some bitters do not contain alcohol.
+    </li>
+  </ul>
+  <h2>Bitters</h2>
+    <p>
+      Bitters can add dimension to a mixed drink. Many are alcohol based, but others are primarily glycerine. I started a list of <a href="https://docs.google.com/spreadsheets/d/14QJELN8aQOi0KkhZDlwzT2LDolTvim8Y5P4gYOPbXhg/"  rel="external">Bitters</a> in google sheets, please feel free to add to it.
+    </p>
+  <div class="googlesheetsbox">
+    <iframe class="googlesheets-embed" title="google sheet of bitters" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSFl09Ckj8U9Fo5Ti4Wi5uMYjpslLZOfte4tZUOw7RZJLOVRrZWJtomg-vTTxHZJzdU-kLVUIft071L/pubhtml?widget=true&amp;headers=false"></iframe>
+  </div>
+  <h2>No and Low ABV Products</h2>
+  <p>
+    No and low ABV spirits, beers, and wines are becoming easier to find. I started a list of <a href="https://docs.google.com/spreadsheets/d/1qSWBu3jViAa3OpPSHfAK23pJltQwDFpTnaZ2FJXSbcE/"  rel="external">No and Low ABV Products</a> in google sheets, please feel free to add to it.
+  </p>
+  <div class="googlesheetsbox">
+    <iframe class="googlesheets-embed" title="google sheet of no and low abv products" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQIwYx4DIbgR2upP1QADnZl7oWQfDWBBziDLqywU6BSPP-pE_qOj-8LI67az3-EUe3-nOulaDhKO2A-/pubhtml?widget=true&amp;headers=false"></iframe>
+  </div>
+  <h2>Syrups</h2>
+  <p>I started a list of <a href="https://docs.google.com/spreadsheets/d/1UegUi9GoSLZpt9ikpp2S115XBrzisGIi_d0vgfTthTQ/" rel="external">Syrups</a> in google sheets, please feel free to add to it.</p>
+  <div>
+    <iframe class="googlesheets-embed" title="google sheet of syrups" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlXi5djUkWYW81B0HPxX-A8cAPqZXjBjZmqooGTPaQmHNj0cnU-NbAYAC3btXEB92fUgzyDNybAyyF/pubhtml?widget=true&amp;headers=false"></iframe>
+  </div>
+</div>
+
+</main>
+
+<footer w3-include-html="/footer.html"></footer>
+
+<script>w3.includeHTML();</script>
+
+</body>
+</html>
